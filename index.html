@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ankit's Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(29, 5, 50);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(4, 4, 54);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 22px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(193, 132, 231);
+        }
+
+        .firstSec {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 70px 0;
+        }
+
+        .firstSec>div {
+            width: 30%;
+        }
+
+        .leftSec {
+            font-size: 2.5rem;
+
+        }
+
+        .rightSec img {
+            width: 350px;
+            margin: 36px 0;
+        }
+
+        .purple {
+            color: rgb(152, 119, 229);
+
+        }
+
+        #element {
+            color: rgb(176, 119, 229);
+        }
+
+        .secondSec {
+            max-width: 80vw;
+            margin: auto;
+            height: 35vh;
+        }
+
+        main hr {
+            border: 0;
+            background: rgb(167, 29, 217);
+            height: 1.2px;
+            margin: 40px 84px;
+        }
+
+       
+        .secondSec .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .secondSec .box ul li {
+            font-size: 20px;
+            margin: 10px;
+        }
+
+        footer {
+            background-color: rgb(26, 26, 37);
+            height: 233px;
+        }
+
+        .footer {
+            display: flex;
+            padding: 23px 122px;
+        }
+        .btn{
+            padding: 9px;
+            margin-left: 558px;
+            margin-top: 20px;
+            background-color: blueviolet;
+            color: white;
+            border-radius: 9px;
+            font-size: 15px;
+            cursor: pointer;
+        }
+        .footer-rights{
+            text-align: center;
+            margin-top: 90px;
+            color: grey;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">
+                <font style="font-size: 25px;">Ankit's Portfolio</font>
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Projects</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSec">
+            <div class="leftSec">
+                Hii, My name is<span class="purple"> Ankit</span>
+                <div>and I am a Fresher Computer Science Engineer.</div>
+                <span id="element"></span>
+            </div>
+            <div class="rightSec">
+                <img src="pic.png" alt="">
+            </div>
+
+        </section>
+        <hr>
+        <section class="secondSec">
+            <center><h1>MY SKILLS</h1></center>
+            <div class="row">
+                <div class="box" style="width: 30%;margin: 0 240px; float:left">
+                    <ul>
+                        <li>Java</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+
+                    </ul>
+                </div>
+
+                <div class="box" style="width: 30%; float:left">
+                    <ul>
+                        <li>JavaScript</li>
+                        <li>Swift</li>
+                        <li>MySQL</li>
+
+                    </ul>
+                </div>
+
+            </div>
+         </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-second">
+                 <button type="button" class="btn" onclick="location.href='https://drive.google.com/file/d/1FZb1qTEbiR03dxoJd5AvJOLT8jqxhnbD/view?usp=sharing'">Download Resume</button>                                
+            </div>
+           
+        </div>
+        <div class="footer-rights">
+            copyright &#169; | All rights reserved
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web-Developer', 'HTML, CSS, JavaScript', 'Video Editor', 'Graphic Designer', 'Proficiency in Java'],
+            typeSpeed: 50,
+        });
+    </script>
+
+</body>
+
+</html>
